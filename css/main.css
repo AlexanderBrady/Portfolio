@@ -5,14 +5,28 @@
 
 /* Set default font size for the body */
 body {
-  font-size: 14px;
+  padding-inline: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: Roboto;
+  font-weight: 200;
+  font-size: 150px;
+}
+
+h3 {
+  font-family: Lato;
+  font-weight: Regular;
+  font-size: 20px;
 }
 
 /* Main container styling */
-.v351_2 {
+.main-container {
   width: 100%;
   height: 1736px;
-  background: rgba(246,237,225,1);
+  background: rgba(246, 237, 225, 1);
   opacity: 1;
   position: absolute;
   top: 0;
@@ -21,150 +35,48 @@ body {
 }
 
 /* Styling for the first name header */
-.v380_97 {
-  width: 200px;
-  color: rgba(0,0,0,1);
-  position: absolute;
-  top: 482px;
-  left: 170px;
-  font-family: Lato;
-  font-weight: Regular;
-  font-size: 20px;
-  opacity: 1;
-  text-align: left;
-}
-
-/* Styling for the second name header */
-.v496_20536 {
-  width: 148px;
-  color: rgba(0,0,0,1);
-  position: absolute;
-  top: 52px;
-  left: 123px;
-  font-family: Lato;
-  font-weight: Bold;
-  font-size: 20px;
-  opacity: 1;
-  text-align: left;
-}
-
-/* Decorative box styling */
-.v379_28, .v470_6, .v470_7 {
-  width: 300px;
-  height: 300px;
-  background: rgba(230,220,207,1);
-  opacity: 1;
-  position: absolute;
-  top: 788px;
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-/* Specific positions for decorative boxes */
-.v379_28 {
-  left: 142px;
-}
-.v470_6 {
-  left: 490px;
-}
-.v470_7 {
-  left: 838px;
-}
-
-/* Portfolio section title styling */
-.v379_3 {
-  width: 579px;
-  color: rgba(0,0,0,1);
-  position: absolute;
-  top: 232px;
-  left: 170px;
-  font-family: Roboto;
-  font-weight: Regular;
-  font-size: 150px;
-  opacity: 1;
-  text-align: left;
-}
 
 /* About me section title styling */
-.v470_8 {
-  width: 500px;
-  color: rgba(0,0,0,1);
-  position: absolute;
-  top: 1270px;
-  left: 166px;
+h2 {
+  color: rgba(0, 0, 0, 1);
   font-family: Roboto Flex;
   font-weight: Regular;
   font-size: 100px;
-  opacity: 1;
   text-align: left;
 }
 
 /* About me description styling */
-.v379_19 {
-  width: 497px;
-  color: rgba(0,0,0,1);
-  position: absolute;
-  top: 1387px;
-  left: 554px;
+p {
+  color: rgba(0, 0, 0, 1);
   font-family: Lato;
   font-weight: Regular;
   font-size: 20px;
-  opacity: 1;
-  text-align: left;
 }
 
 /* Background image styling for elements */
-.v380_96 {
-  width: 500px;
-  height: 603px;
-  background: url("../images/v380_96.png") no-repeat center center / cover;
+
+img {
+  width: 40vw;
+  height: auto;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+  background: rgba(230, 220, 207, 1);
   opacity: 1;
-  position: absolute;
-  top: 150x;
-  left: 637px;
+  top: 788px;
+  border-radius: 20px;
   overflow: hidden;
-}
-
-.v470_2, .v470_4 {
-  width: 50px;
-  height: 50px;
-  background: no-repeat center center / cover;
-  opacity: 1;
-  position: absolute;
-  top: 522px;
-  overflow: hidden;
-}
-
-/* Specific positions for background images */
-.v470_2 {
-  background-image: url("../images/v470_2.png");
-  left: 170px;
-}
-
-.v470_4 {
-  background-image: url("../images/v470_4.png");
-  left: 226px;
-}
-
-/* Projects section title styling */
-.v491_2 {
-  width: 73px;
-  color: rgba(0,0,0,1);
-  position: absolute;
-  top: 52px;
-  left: 1100px;
-  font-family: Lato;
-  font-weight: Bold;
-  font-size: 20px;
-  opacity: 1;
-  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Project tag styling */
-.v491_23, .v496_14738, .v496_14739 {
+.card-item {
   width: 170px;
-  color: rgba(0,0,0,1);
-  position: absolute;
+  color: rgba(0, 0, 0, 1);
   top: 850px;
   font-family: Roboto Condensed;
   font-weight: Bold;
@@ -174,14 +86,13 @@ body {
 }
 
 /* Specific positions for project tags */
-.v491_23 {
-  left: 206px;
-  width: 173px;
+.card-container {
+  display: flex;
+  gap: 1rem;
 }
-.v496_14738 {
-  left: 554px;
-}
-.v496_14739 {
-  left: 895px;
-  width: 186px;
+
+.about-me-description-container {
+  display: flex;
+  gap: 1rem;
+  max-width: 60vw;
 }
