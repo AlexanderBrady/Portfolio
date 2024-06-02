@@ -87,7 +87,7 @@ body {
 
 /* About me section title styling */
 .v470_8 {
-  width: 343px;
+  width: 500px;
   color: rgba(0,0,0,1);
   position: absolute;
   top: 1270px;
@@ -115,12 +115,12 @@ body {
 
 /* Background image styling for elements */
 .v380_96 {
-  width: 351px;
-  height: 424px;
+  width: 500px;
+  height: 603px;
   background: url("../images/v380_96.png") no-repeat center center / cover;
   opacity: 1;
   position: absolute;
-  top: 232px;
+  top: 150x;
   left: 637px;
   overflow: hidden;
 }
