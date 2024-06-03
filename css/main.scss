@@ -1,0 +1,247 @@
+$colors: #7600fe, #5500fe, #5602fe, #3100fe, #1300fd, #010afe, #0127fe, #0143fe,
+  #0165fb, #0183fb, #01a2fe, #01c0fb, #02defc, #00fdfd, #03fcd4, #00ffc1;
+$colors-2: #09f6b8, #00ffc1, #03fcd4, #00fffc, #02defc, #02bffe, #01a2fe,
+  #0185fe, #0168fe, #014bfe, #0127fe, #010afe, #1300fd, #3100fe, #5500fe,
+  #7602fe, #7100f6;
+$white: #fff;
+
+/* Apply box-sizing to all elements to include padding and border in element's total width and height */
+* {
+  box-sizing: border-box;
+}
+
+/* Set default font size for the body */
+body {
+  background: rgba(247, 243, 237, 1);
+  margin: 0;
+}
+
+main {
+  padding-inline: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: Roboto;
+  font-weight: 200;
+  font-size: 150px;
+}
+h2 {
+  margin: 0;
+}
+
+h3 {
+  font-family: Lato;
+  font-weight: Regular;
+  font-size: 20px;
+}
+
+span {
+  font-family: Roboto;
+  font-weight: 100;
+  font-size: 15px;
+  color: rgb(111, 122, 124);
+}
+
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+}
+
+/* Main container styling */
+.main-container {
+  width: 100%;
+  height: 1736px;
+  background: rgba(246, 237, 225, 1);
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+/* Styling for the first name header */
+
+/* About me section title styling */
+h2 {
+  color: rgba(0, 0, 0, 1);
+  font-family: Roboto Flex;
+  font-weight: Regular;
+  font-size: 100px;
+  text-align: left;
+}
+
+/* About me description styling */
+p {
+  color: rgba(0, 0, 0, 1);
+  font-family: Lato;
+  font-weight: Regular;
+  font-size: 20px;
+}
+
+/* Background image styling for elements */
+
+img {
+  width: 40vw;
+  height: auto;
+}
+
+.card {
+  min-width: 300px;
+  min-height: 300px;
+  background: #e6dccf;
+  padding: 20px;
+  top: 788px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  gap: 1rem;
+}
+
+.card:hover {
+  background: #c2c8c9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  transform: translateY(-10px) scale(1.02);
+}
+
+.card:hover > h2 {
+  color: #ffffff;
+}
+.card:hover > div > h2 {
+  color: #ffffff;
+}
+
+/* Project tag styling */
+.card-item {
+  width: 170px;
+  color: rgba(0, 0, 0, 1);
+  top: 850px;
+  font-family: Roboto Condensed;
+  font-weight: Bold;
+  font-size: 150px;
+  opacity: 1;
+  text-align: left;
+}
+
+/* Specific positions for project tags */
+.card-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.about-me-description-container {
+  display: flex;
+  gap: 1rem;
+  max-width: 60vw;
+}
+
+.appear-on-hover-text {
+  opacity: 0;
+  transition: all 0.4s ease;
+  position: absolute;
+  display: none;
+}
+
+.card:hover > div > .appear-on-hover-text {
+  opacity: 1;
+  display: block;
+}
+
+#container {
+  position: relative;
+  width: 22.813rem;
+  height: 22.813rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.circles {
+  display: flex;
+  flex-wrap: wrap;
+  .circle {
+    position: relative;
+    width: 1.563rem;
+    height: 1.563rem;
+    margin: -0.125rem;
+    border-radius: 50%;
+  }
+}
+
+@for $i from 1 through 16 {
+  @for $circle from 2 through 2 {
+    .circles:nth-child(#{$i}) .circle:nth-child(#{$circle}n) {
+      opacity: 0;
+      background: nth($colors, $i);
+      animation: circleSize 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+      animation-delay: #{($circle * 0.1) - (($i - 1) * 0.1)}s;
+    }
+  }
+}
+
+@for $i from 1 through 17 {
+  @for $circle from 2 through 2 {
+    .circles:nth-child(#{$i}) .circle:not(:nth-child(#{$circle}n)) {
+      opacity: 1;
+      background: nth($colors-2, $i);
+      animation: circleSizeTwo
+        4s
+        cubic-bezier(0.445, 0.05, 0.55, 0.95)
+        infinite;
+      animation-delay: #{($circle * 0.1) - (($i - 1) * 0.1)}s;
+    }
+  }
+}
+
+@supports (display: grid) {
+  // body {
+  //   display: grid;
+  //   grid-template-columns: repeat(4, 1fr);
+  //   grid-gap: 0.625rem;
+  //   grid-template-areas: ". main main ." ". main main .";
+  // }
+
+  #container {
+    grid-area: main;
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+@keyframes circleSize {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  10%,
+  90% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes circleSizeTwo {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  40%,
+  60% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
