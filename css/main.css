@@ -170,231 +170,231 @@ img {
 
 .circles:nth-child(1) .circle:nth-child(2n) {
   opacity: 0;
-  background: #7600fe;
+  background: #f6e9d8;
   animation: circleSize 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
   animation-delay: 0.2s;
 }
 
 .circles:nth-child(2) .circle:nth-child(2n) {
   opacity: 0;
-  background: #5500fe;
+  background: #e8c8a0;
   animation: circleSize 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
   animation-delay: 0.1s;
 }
 
 .circles:nth-child(3) .circle:nth-child(2n) {
   opacity: 0;
-  background: #5602fe;
+  background: #d8af85;
   animation: circleSize 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
   animation-delay: 0s;
 }
 
 .circles:nth-child(4) .circle:nth-child(2n) {
   opacity: 0;
-  background: #3100fe;
+  background: #c8956a;
   animation: circleSize 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
   animation-delay: -0.1s;
 }
 
 .circles:nth-child(5) .circle:nth-child(2n) {
   opacity: 0;
-  background: #1300fd;
+  background: #b87a4f;
   animation: circleSize 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
   animation-delay: -0.2s;
 }
 
 .circles:nth-child(6) .circle:nth-child(2n) {
   opacity: 0;
-  background: #010afe;
+  background: #a76035;
   animation: circleSize 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
   animation-delay: -0.3s;
 }
 
 .circles:nth-child(7) .circle:nth-child(2n) {
   opacity: 0;
-  background: #0127fe;
+  background: #97461b;
   animation: circleSize 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
   animation-delay: -0.4s;
 }
 
 .circles:nth-child(8) .circle:nth-child(2n) {
   opacity: 0;
-  background: #0143fe;
+  background: #863001;
   animation: circleSize 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
   animation-delay: -0.5s;
 }
 
 .circles:nth-child(9) .circle:nth-child(2n) {
   opacity: 0;
-  background: #0165fb;
+  background: #751900;
   animation: circleSize 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
   animation-delay: -0.6s;
 }
 
 .circles:nth-child(10) .circle:nth-child(2n) {
   opacity: 0;
-  background: #0183fb;
+  background: #640200;
   animation: circleSize 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
   animation-delay: -0.7s;
 }
 
 .circles:nth-child(11) .circle:nth-child(2n) {
   opacity: 0;
-  background: #01a2fe;
+  background: #530000;
   animation: circleSize 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
   animation-delay: -0.8s;
 }
 
 .circles:nth-child(12) .circle:nth-child(2n) {
   opacity: 0;
-  background: #01c0fb;
+  background: #420000;
   animation: circleSize 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
   animation-delay: -0.9s;
 }
 
 .circles:nth-child(13) .circle:nth-child(2n) {
   opacity: 0;
-  background: #02defc;
+  background: #310000;
   animation: circleSize 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
   animation-delay: -1s;
 }
 
 .circles:nth-child(14) .circle:nth-child(2n) {
   opacity: 0;
-  background: #00fdfd;
+  background: #200000;
   animation: circleSize 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
   animation-delay: -1.1s;
 }
 
 .circles:nth-child(15) .circle:nth-child(2n) {
   opacity: 0;
-  background: #03fcd4;
+  background: #100000;
   animation: circleSize 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
   animation-delay: -1.2s;
 }
 
 .circles:nth-child(16) .circle:nth-child(2n) {
   opacity: 0;
-  background: #00ffc1;
+  background: #000000;
   animation: circleSize 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
   animation-delay: -1.3s;
 }
 
 .circles:nth-child(1) .circle:not(:nth-child(2n)) {
   opacity: 1;
-  background: #09f6b8;
+  background: #d3b8a5;
   animation: circleSizeTwo 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
   animation-delay: 0.2s;
 }
 
 .circles:nth-child(2) .circle:not(:nth-child(2n)) {
   opacity: 1;
-  background: #00ffc1;
+  background: #c4a18a;
   animation: circleSizeTwo 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
   animation-delay: 0.1s;
 }
 
 .circles:nth-child(3) .circle:not(:nth-child(2n)) {
   opacity: 1;
-  background: #03fcd4;
+  background: #b58b70;
   animation: circleSizeTwo 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
   animation-delay: 0s;
 }
 
 .circles:nth-child(4) .circle:not(:nth-child(2n)) {
   opacity: 1;
-  background: #00fffc;
+  background: #a57555;
   animation: circleSizeTwo 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
   animation-delay: -0.1s;
 }
 
 .circles:nth-child(5) .circle:not(:nth-child(2n)) {
   opacity: 1;
-  background: #02defc;
+  background: #95613b;
   animation: circleSizeTwo 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
   animation-delay: -0.2s;
 }
 
 .circles:nth-child(6) .circle:not(:nth-child(2n)) {
   opacity: 1;
-  background: #02bffe;
+  background: #844c21;
   animation: circleSizeTwo 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
   animation-delay: -0.3s;
 }
 
 .circles:nth-child(7) .circle:not(:nth-child(2n)) {
   opacity: 1;
-  background: #01a2fe;
+  background: #733707;
   animation: circleSizeTwo 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
   animation-delay: -0.4s;
 }
 
 .circles:nth-child(8) .circle:not(:nth-child(2n)) {
   opacity: 1;
-  background: #0185fe;
+  background: #622400;
   animation: circleSizeTwo 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
   animation-delay: -0.5s;
 }
 
 .circles:nth-child(9) .circle:not(:nth-child(2n)) {
   opacity: 1;
-  background: #0168fe;
+  background: #511100;
   animation: circleSizeTwo 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
   animation-delay: -0.6s;
 }
 
 .circles:nth-child(10) .circle:not(:nth-child(2n)) {
   opacity: 1;
-  background: #014bfe;
+  background: #400000;
   animation: circleSizeTwo 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
   animation-delay: -0.7s;
 }
 
 .circles:nth-child(11) .circle:not(:nth-child(2n)) {
   opacity: 1;
-  background: #0127fe;
+  background: #2f0000;
   animation: circleSizeTwo 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
   animation-delay: -0.8s;
 }
 
 .circles:nth-child(12) .circle:not(:nth-child(2n)) {
   opacity: 1;
-  background: #010afe;
+  background: #1e0000;
   animation: circleSizeTwo 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
   animation-delay: -0.9s;
 }
 
 .circles:nth-child(13) .circle:not(:nth-child(2n)) {
   opacity: 1;
-  background: #1300fd;
+  background: #0d0000;
   animation: circleSizeTwo 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
   animation-delay: -1s;
 }
 
 .circles:nth-child(14) .circle:not(:nth-child(2n)) {
   opacity: 1;
-  background: #3100fe;
+  background: #040000;
   animation: circleSizeTwo 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
   animation-delay: -1.1s;
 }
 
 .circles:nth-child(15) .circle:not(:nth-child(2n)) {
   opacity: 1;
-  background: #5500fe;
+  background: #030000;
   animation: circleSizeTwo 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
   animation-delay: -1.2s;
 }
 
 .circles:nth-child(16) .circle:not(:nth-child(2n)) {
   opacity: 1;
-  background: #7602fe;
+  background: #020000;
   animation: circleSizeTwo 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
   animation-delay: -1.3s;
 }
 
 .circles:nth-child(17) .circle:not(:nth-child(2n)) {
   opacity: 1;
-  background: #7100f6;
+  background: #010000;
   animation: circleSizeTwo 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
   animation-delay: -1.4s;
 }
