@@ -145,6 +145,24 @@ img {
   display: block;
 }
 
+/* New project button styles */
+.project-button {
+  position: absolute;
+  right: 20px; /* 20px from the right */
+  text-align: center;
+  text-decoration: none;
+  color: #000; /* Initial text color */
+  font-family: Lato, sans-serif;
+  font-weight: Regular;
+  font-size: 16px; /* Font size */
+  cursor: pointer;
+  transition: color 0.4s ease; /* Transition for smooth color change */
+}
+
+.project-button:hover {
+  color: #c2c8c9; /* Change text color to white on hover */
+}
+
 #container {
   position: relative;
   width: 22.813rem;
