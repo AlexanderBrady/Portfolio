@@ -92,6 +92,7 @@ img {
   align-items: center;
   cursor: pointer;
   gap: 1rem;
+  border: 2px solid #333; /* Add this line for the stroke */
 }
 
 .card:hover {
@@ -99,6 +100,7 @@ img {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: all 0.4s ease;
   transform: translateY(-10px) scale(1.02);
+  border-color: #555; /* Optional: change border color on hover */
 }
 
 .card:hover > h2 {
