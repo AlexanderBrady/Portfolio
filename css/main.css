@@ -163,6 +163,21 @@ img {
   color: #c2c8c9; /* Change text color to white on hover */
 }
 
+.alex-button {
+  position: absolute;
+  left: 20px; /* 20px from the right */
+  text-align: center;
+  text-decoration: none;
+  color: #000; /* Initial text color */
+  font-family: Lato, sans-serif;
+  font-weight: regular;
+  font-size: 16px; /* Font size */
+  cursor: pointer;
+  transition: color 0.4s ease; /* Transition for smooth color change */
+}
+.alex-button:hover {
+  color: #c2c8c9; /* Change text color to white on hover */
+}
 #container {
   position: relative;
   width: 22.813rem;
