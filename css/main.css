@@ -487,34 +487,42 @@ img {
   width: 100vw; /* One card per line */
   text-align: left;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start; /* Align items to the start (top) */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
   height: 450px; /* Set a fixed height */
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  transition: all 0.4s ease; /* Transition for hover effect */
+  position: relative; /* Position relative for absolute positioning of content */
 }
 
-.project-card:hover {
-  background: #c2c8c9;
-  transition: all 0.4s ease;
-  transform: translateY(-10px); /* Move the card up */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+/* Hover styles for each card */
+.project-card.card-1:hover {
+  background: #badeff;
+}
+
+.project-card.card-2:hover {
+  background: #ffd6ba;
+}
+
+.project-card.card-3:hover {
+  background: #ffbaba;
+}
+
+.project-card.card-4:hover {
+  background: #c3efd5;
 }
 
 .project-card h2 {
   font-family: "Oswald", sans-serif;
   font-size: 50px;
   margin: 10px 0;
-  align-self: flex-start; /* Align heading to the start (top) */
+  position: absolute; /* Position absolutely within the card */
+  top: 20px; /* Align to top of card */
+  left: 20px; /* Align to left of card */
 }
 
 .project-card img {
   max-width: 40%;
   border-radius: 8px;
-  align-self: center;
-}
-
-.project-card p {
-  font-family: "Lato", sans-serif;
-  font-size: 16px;
-  color: #000000;
+  align-self: center; /* Center image within the card */
 }
