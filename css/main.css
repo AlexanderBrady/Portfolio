@@ -471,3 +471,50 @@ img {
     transform: scale(0);
   }
 } /*# sourceMappingURL=main.css.map */
+
+.projects-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 100px;
+  margin: 0;
+  width: 100vw;
+}
+
+.project-card {
+  background: #f9f9f9;
+  padding: 20px;
+  width: 100vw; /* One card per line */
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items to the start (top) */
+  height: 450px; /* Set a fixed height */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.project-card:hover {
+  background: #c2c8c9;
+  transition: all 0.4s ease;
+  transform: translateY(-10px); /* Move the card up */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}
+
+.project-card h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 50px;
+  margin: 10px 0;
+  align-self: flex-start; /* Align heading to the start (top) */
+}
+
+.project-card img {
+  max-width: 40%;
+  border-radius: 8px;
+  align-self: center;
+}
+
+.project-card p {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: #000000;
+}
