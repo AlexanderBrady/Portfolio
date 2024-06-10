@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Meta tags for character set and viewport -->
@@ -9,7 +10,7 @@
     />
 
     <!-- Title of the document -->
-    <title>Alexander Brady Portfolio</title>
+    <title>Alexander Brady Portfolio - Projects</title>
 
     <!-- Linking Google Fonts -->
     <link
@@ -28,56 +29,44 @@
       href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Linking CSS file -->
     <link href="./css/main.css" rel="stylesheet" />
   </head>
   <body>
+    <header>
+      <nav>
+        <a href="./index.html" class="alex-button">
+          <h3>Alexander Brady</h3>
+        </a>
+        <a href="./project.html" class="project-button">
+          <h3>Projects</h3>
+        </a>
+      </nav>
+    </header>
     <main>
-      <a href="./index.html" class="alex-button">
-        <h3>Alexander Brady</h3>
-      </a>
-      <a href="./project.html" class="project-button">
-        <h3>Projects</h3>
-      </a>
-      <div
-        style="
-          gap: 2rem;
-          margin-top: 10vh;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        "
-      >
-        <div class="card">
-          <div style="width: 400px; height: 400px">
-            <img
-              src="https://i.pinimg.com/474x/30/35/36/303536f6c140ca1afb63259af6d250dd.jpg"
-              alt=""
-              style="
-                border-radius: 10px;
-                object-fit: cover;
-                width: 100%;
-                height: 100%;
-              "
-            />
-          </div>
-          <div style="display: flex; flex-direction: column; gap: 1rem">
-            <h2>Pollen Pursuit</h2>
-            <p>AR Game</p>
-            <span
-              class="appear-on-hover-text"
-              style="position: absolute; right: 20px; bottom: 20px"
-            >
-              See project
-            </span>
-          </div>
+      <section class="projects-section">
+        <div class="project-card card-1">
+          <h2>Pollen Pursuit</h2>
+          <img src="./images/v380_96.png" />
         </div>
-        <div class="card"><h2>project-1</h2></div>
-        <div class="card"><h2>project-1</h2></div>
-        <div class="card"><h2>project-1</h2></div>
-        <div class="card"><h2>project-1</h2></div>
-      </div>
+        <div class="project-card card-2">
+          <h2>Maple’s Mobile App</h2>
+          <img src="./images/screens 1.png" />
+        </div>
+        <div class="project-card card-3">
+          <h2>AutoNAV</h2>
+          <img src="./images/VentsControl.png" />
+        </div>
+        <div class="project-card card-4">
+          <h2>RelsApp</h2>
+          <img src="./images/Group 1.png" />
+        </div>
+      </section>
     </main>
   </body>
 </html>

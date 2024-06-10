@@ -471,3 +471,58 @@ img {
     transform: scale(0);
   }
 } /*# sourceMappingURL=main.css.map */
+
+.projects-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 100px;
+  margin: 0;
+  width: 100vw;
+}
+
+.project-card {
+  background: #f9f9f9;
+  padding: 20px;
+  width: 100vw; /* One card per line */
+  text-align: left;
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  height: 450px; /* Set a fixed height */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  transition: all 0.4s ease; /* Transition for hover effect */
+  position: relative; /* Position relative for absolute positioning of content */
+}
+
+/* Hover styles for each card */
+.project-card.card-1:hover {
+  background: #badeff;
+}
+
+.project-card.card-2:hover {
+  background: #ffd6ba;
+}
+
+.project-card.card-3:hover {
+  background: #ffbaba;
+}
+
+.project-card.card-4:hover {
+  background: #c3efd5;
+}
+
+.project-card h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 50px;
+  margin: 10px 0;
+  position: absolute; /* Position absolutely within the card */
+  top: 20px; /* Align to top of card */
+  left: 20px; /* Align to left of card */
+}
+
+.project-card img {
+  max-width: 40%;
+  border-radius: 8px;
+  align-self: center; /* Center image within the card */
+}
