@@ -493,6 +493,7 @@ img {
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
   transition: all 0.4s ease; /* Transition for hover effect */
   position: relative; /* Position relative for absolute positioning of content */
+  border-radius: 20px;
 }
 
 /* Hover styles for each card */
