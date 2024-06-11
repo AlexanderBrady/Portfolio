@@ -523,7 +523,15 @@ img {
 }
 
 .project-card img {
-  max-width: 40%;
+  max-width: 50%;
   border-radius: 8px;
   align-self: center; /* Center image within the card */
+}
+
+.pollen-gif {
+  width: 20%; /* Or any specific size */
+  max-width: 500px; /* Or any specific max size */
+  height: auto; /* To maintain the aspect ratio */
+  display: block;
+  margin: 0 auto; /* Center the GIF */
 }
