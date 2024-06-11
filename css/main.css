@@ -31,6 +31,13 @@ h3 {
   font-size: 20px;
 }
 
+h4 {
+  font-family: Oswald;
+  font-weight: 400;
+  font-size: 50px;
+  padding-left: 50px;
+}
+
 span {
   font-family: Roboto;
   font-weight: 100;
@@ -77,6 +84,12 @@ p {
 img {
   width: 40vw;
   height: auto;
+}
+
+.img1 {
+  width: 100vw;
+  height: auto;
+  align-items: center;
 }
 
 .card {
@@ -534,4 +547,16 @@ img {
   height: auto; /* To maintain the aspect ratio */
   display: block;
   margin: 0 auto; /* Center the GIF */
+}
+.iframe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+iframe {
+  width: 100%;
+  height: 800px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
