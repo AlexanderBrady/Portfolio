@@ -45,16 +45,16 @@
         <h3>Projects</h3>
       </a>
     </main>
-    <h4>Pollen Pursuit AR</h4>
+    <img src="./images/Pollen1.png" class="img1" />
     <!-- <p>AR Game</p> -->
     <img
       src="./GIF/pollenGIF.gif"
       alt="Pollen Pursuit GIF"
       class="pollen-gif"
     />
-    <button id="backToTop" onclick="scrollToTop()">Back to Top</button>
 
     <!-- JavaScript for Back to Top Button -->
+    <button id="backToTop" onclick="scrollToTop()">Back to Top</button>
     <script>
       // When the user scrolls down 20px from the top of the document, show the button
       window.onscroll = function () {
@@ -64,8 +64,8 @@
       function scrollFunction() {
         const backToTopButton = document.getElementById("backToTop");
         if (
-          document.body.scrollTop > 20 ||
-          document.documentElement.scrollTop > 20
+          document.body.scrollTop > 50 ||
+          document.documentElement.scrollTop > 50
         ) {
           backToTopButton.style.display = "block";
         } else {
