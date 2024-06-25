@@ -542,12 +542,39 @@ img {
 }
 
 .pollen-gif {
-  width: 20%; /* Or any specific size */
-  max-width: 500px; /* Or any specific max size */
+  width: 30%; /* Or any specific size */
+  max-width: 750px; /* Or any specific max size */
   height: auto; /* To maintain the aspect ratio */
   display: block;
-  margin: 0 auto; /* Center the GIF */
+  margin: 20px auto 100px 100px; /* Adjust margin to add padding and align to center-left */
 }
+
+.content-container {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  padding: 20px;
+}
+
+.text-content {
+  margin-left: 20px; /* Space between image and text */
+  max-width: 60%; /* Adjust as needed */
+}
+
+.content-container.alternate {
+  flex-direction: row-reverse; /* Reverse the order for alternate layout */
+}
+
+.text-content h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+}
+
+.text-content p {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
 .iframe-container {
   display: flex;
   justify-content: center;
