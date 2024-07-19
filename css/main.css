@@ -7,17 +7,12 @@
 body {
   background: rgb(247, 243, 237);
   margin: 0;
-  overflow-x: hidden;
-  width: 100vw;
-  position: relative;
 }
 
 main {
   padding-inline: 16px;
   display: flex;
   flex-direction: column;
-  position: relative;
-  overflow-x: hidden;
 }
 
 h1 {
@@ -53,24 +48,6 @@ span {
 a {
   text-decoration: none;
   color: rgb(0, 0, 0);
-}
-
-@media (max-width: 600px) {
-  h1 {
-    font-size: 100px;
-  }
-  h2 {
-    font-size: 50px;
-  }
-  h3 {
-    font-size: 16px;
-  }
-  h4 {
-    font-size: 30px;
-  }
-  span {
-    font-size: 12px;
-  }
 }
 
 /* Main container styling */
@@ -224,30 +201,7 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transform-origin: left;
-  z-index: -99;
   margin-top: -20px; /* Adjust this value to move the circles up */
-}
-
-@media (max-width: 600px) {
-  #container {
-    scale: 0.5;
-  }
-  .project-tag-container {
-    flex-direction: column;
-  }
-
-  #filler {
-    display: none;
-  }
-  .about-me-title {
-    grid-column: span 2;
-  }
-  .about-me-description {
-    display: flex;
-    grid-column: span 2;
-    max-width: none;
-  }
 }
 
 .circles {
@@ -533,19 +487,19 @@ img {
 
 .projects-section {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 50px;
-  margin-block: 10vh;
-  width: 100%;
-  align-items: center;
+  padding: 100px;
+  margin: 0;
+  width: 100vw;
 }
 
 .project-card {
   background: #f9f9f9;
   padding: 20px;
-  display: flex;
+  width: 100vw; /* One card per line */
   text-align: left;
-  width: 100%;
+  display: flex;
   justify-content: center; /* Center items horizontally */
   align-items: center; /* Center items vertically */
   height: 500px; /* Set a fixed height */
