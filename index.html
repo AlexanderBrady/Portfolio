@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Portfolio website for Alexander Brady showcasing projects and journey."
-    />
+      content="Portfolio website for Alexander Brady showcasing projects and journey." />
 
     <!-- Title of the document -->
     <title>Alexander Brady Portfolio</title>
@@ -14,25 +13,20 @@
     <!-- Linking Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Lato&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto+Flex&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
 
     <!-- Linking CSS file -->
     <link href="./css/main.css" rel="stylesheet" />
@@ -57,8 +51,7 @@
           height: 100vh;
           justify-content: center;
           align-items: center;
-        "
-      >
+        ">
         <div style="display: flex; flex-direction: column">
           <h1 style="margin: 0; padding: 0">Portfolio</h1>
           <p>Alexander Brady</p>
@@ -75,8 +68,12 @@
         <!-- <img src="./images/v380_96.png" style="margin-block: auto" /> -->
         <div
           id="container"
-          style="position: absolute; left: 0; transform: translateX(-50%)"
-        >
+          style="
+            position: absolute;
+            left: 0;
+            transform: translateX(-50%);
+            transform-origin: left;
+          ">
           <div class="circles">
             <div class="circle"></div>
           </div>
@@ -259,8 +256,12 @@
         </div>
         <div
           id="container"
-          style="position: absolute; right: 0; transform: translateX(50%)"
-        >
+          style="
+            position: absolute;
+            right: 0;
+            transform: translateX(50%);
+            transform-origin: right;
+          ">
           <div class="circles">
             <div class="circle"></div>
           </div>
@@ -445,6 +446,7 @@
       <!-- Project tags -->
       <div style="height: vh; display: flex; align-items: center">
         <div
+          class="project-tag-container"
           style="
             width: 100%;
             height: fit-content;
@@ -452,28 +454,24 @@
             display: flex;
             gap: 2rem;
             margin-top: -50px;
-          "
-        >
+          ">
           <a
             href="./pollen.html"
             class="card"
-            style="text-decoration: none; color: inherit"
-          >
+            style="text-decoration: none; color: inherit">
             <span class="card-item">AR</span>
           </a>
           <a
             href="./project.html"
             class="card"
-            style="text-decoration: none; color: inherit"
-          >
+            style="text-decoration: none; color: inherit">
             <span class="card-item">UX</span>
           </a>
           <a
             href="https://github.com/AlexanderBrady"
             class="card"
             style="text-decoration: none; color: inherit"
-            target="_blank"
-          >
+            target="_blank">
             <span class="card-item">&lt;/&gt</span>
           </a>
         </div>
@@ -481,6 +479,7 @@
 
       <!-- About me section -->
       <div
+        class="about-me-container"
         style="
           display: grid;
           grid-template-rows: 1fr 0.5fr;
@@ -489,21 +488,32 @@
           justify-content: center;
           align-items: center;
           margin-top: 200px;
-        "
-      >
+        ">
         <h2
+          class="about-me-title"
           style="
             font-family: Roboto Flex;
             font-weight: 100;
             text-align: right;
             margin-bottom: 0;
-          "
-        >
+            @media screen and (max-width: 600px) {
+              text-align: center;
+              grid-column: span 2;
+            }
+          ">
           About me
         </h2>
-        <p></p>
-        <p></p>
-        <p style="display: flex; gap: 1rem; max-width: 40vw">
+        <p id="filler"></p>
+        <p id="filler"></p>
+        <p
+          class="about-me-description"
+          style="
+            display: flex;
+            gap: 1rem;
+            @media (min-width: 600px) {
+              max-width: 40vw;
+            }
+          ">
           My journey began in Architecture, leading to various roles such as
           Architectural designer and CAD designer. These roles honed my skills
           in design thinking and problem-solving. Currently, I am pursuing a
@@ -515,13 +525,7 @@
       </div>
     </main>
     <footer
-      style="
-        background-color: rgb(247, 243, 237);
-        bottom: 0;
-        width: full;
-        padding: 2rem;
-      "
-    >
+      style="background-color: rgb(247, 243, 237); width: full; padding: 1rem">
       <p>brady.alexander321@gmail.com</p>
     </footer>
   </body>
