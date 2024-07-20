@@ -18,6 +18,7 @@ main {
   flex-direction: column;
   position: relative;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 h1 {
@@ -53,6 +54,20 @@ span {
 a {
   text-decoration: none;
   color: rgb(0, 0, 0);
+}
+
+nav {
+  height: max-content;
+  display: flex;
+  width: 100vw;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: sticky;
+  top: 0;
+  background: rgb(247, 243, 237);
 }
 
 @media (max-width: 600px) {
@@ -185,7 +200,6 @@ img {
 
 /* New project button styles */
 .project-button {
-  position: absolute;
   right: 20px; /* 20px from the right */
   text-align: center;
   text-decoration: none;
@@ -202,7 +216,6 @@ img {
 }
 
 .alex-button {
-  position: absolute;
   left: 20px; /* 20px from the right */
   text-align: center;
   text-decoration: none;
